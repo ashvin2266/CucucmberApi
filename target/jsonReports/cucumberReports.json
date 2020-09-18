@@ -1,0 +1,823 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-11T11:08:11.358Z",
+        "line": 4,
+        "name": "verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1244414900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "add Place pay load with\"Lovely HOME\"\"Kenton road\"\"German\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lovely HOME\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Kenton road\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"German\"",
+                  "offset": 49
+                }
+              ],
+              "location": "AddplaceAPI_sd.add_Place_pay_load_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4153278900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2434900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 589574500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15299000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user verify \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 13
+                },
+                {
+                  "val": "APP",
+                  "offset": 41
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@addPlaceApi"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-11T11:08:17.392Z",
+        "line": 22,
+        "name": "verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplaceapi;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7293400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "add Place pay load with\"Avondale Garden\"\"60,Benett close\"\"English\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Avondale Garden\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"60,Benett close\"",
+                  "offset": 40
+                },
+                {
+                  "val": "\"English\"",
+                  "offset": 57
+                }
+              ],
+              "location": "AddplaceAPI_sd.add_Place_pay_load_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2360463900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 315900,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11392300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18032200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verify \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 13
+                },
+                {
+                  "val": "APP",
+                  "offset": 41
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3666111700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verify place_Id created mapes to\"Avondale Garden\"using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Avondale Garden\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 60
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_place_Id_created_mapes_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@addPlaceApiOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-11T11:08:23.457Z",
+        "line": 23,
+        "name": "verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplaceapi;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6985600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "add Place pay load with\"Sweet Home\"\"43 Hounslow Road\"\"Gujarati\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sweet Home\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"43 Hounslow Road\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"Gujarati\"",
+                  "offset": 53
+                }
+              ],
+              "location": "AddplaceAPI_sd.add_Place_pay_load_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2747680400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 585600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10920900,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12903600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verify \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 13
+                },
+                {
+                  "val": "APP",
+                  "offset": 41
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5213469700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verify place_Id created mapes to\"Sweet Home\"using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sweet Home\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 55
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_place_Id_created_mapes_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@addPlaceApiOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-11T11:08:31.457Z",
+        "line": 24,
+        "name": "verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplaceapi;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3517000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "add Place pay load with\"Rahul chety\"\"India\"\"Tamil\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rahul chety\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"India\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"Tamil\"",
+                  "offset": 43
+                }
+              ],
+              "location": "AddplaceAPI_sd.add_Place_pay_load_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2674790600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 386600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9939600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10575900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verify \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 13
+                },
+                {
+                  "val": "APP",
+                  "offset": 41
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4154778500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verify place_Id created mapes to\"Rahul chety\"using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Rahul chety\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_place_Id_created_mapes_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@addPlaceApiOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-11T11:08:38.313Z",
+        "line": 25,
+        "name": "verify if place is successfully added using AddPlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-successfully-added-using-addplaceapi;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4210700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "add Place pay load with\"Lovely Home\"\"Ashram road Ahm\"\"French\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lovely Home\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"Ashram road Ahm\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"French\"",
+                  "offset": 53
+                }
+              ],
+              "location": "AddplaceAPI_sd.add_Place_pay_load_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1933105400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user calls \"AddPlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 217700,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11838400,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12005900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user verify \"scope\" in response body is \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "scope",
+                  "offset": 13
+                },
+                {
+                  "val": "APP",
+                  "offset": 41
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2248438500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user verify place_Id created mapes to\"Lovely Home\"using \"GetPlaceAPI\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Lovely Home\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"GetPlaceAPI\"",
+                  "offset": 56
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_place_Id_created_mapes_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@addPlaceApiOutline"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-09-11T11:08:42.527Z",
+        "before": [
+          {
+            "result": {
+              "duration": 698300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Verify added place is delete successfully by usingn deletePlaceAPI",
+        "description": "",
+        "id": "validating-place-api;verify-added-place-is-delete-successfully-by-usingn-deleteplaceapi",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2522900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "deletePlace payLoad",
+            "match": {
+              "location": "AddplaceAPI_sd.deleteplace_payLoad()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2537361100,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user calls \"DeletePlaceAPI\" with \"post\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DeletePlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"post\"",
+                  "offset": 33
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 709600,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user verify response code is 200",
+            "match": {
+              "location": "AddplaceAPI_sd.user_verify_response_code_is_200()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12485300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user verify \"status\" in response body is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "status",
+                  "offset": 13
+                },
+                {
+                  "val": "OK",
+                  "offset": 42
+                }
+              ],
+              "location": "AddplaceAPI_sd.user_verify_something_in_response_body_is_something(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@deleteApi"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFile/AddPlace.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
